@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Boxes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .parent {
+        border: 3px solid red;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      .parent_child {
+        border: 2px solid green;
+        padding: 10px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h2>Parent Div</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+        accusamus.
+      </p>
+      <div class="parent_child">
+        <h3>Child Div</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </body>
+</html>
