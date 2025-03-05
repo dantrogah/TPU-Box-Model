@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Card Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 30px;
+      }
+
+      .card_container {
+        width: 50%;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+      }
+
+      .card {
+        width: 50%;
+        border: 1px solid black;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          width: 100%;
+          min-width: 100px;
+          padding: 5%;
+        }
+
+        h1 {
+          font-size: 20px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Card Layout</h1>
+    <div class="card_container">
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui incidunt
+        dolore officia, a necessitatibus dolorum!
+      </div>
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui incidunt
+        dolore officia, a necessitatibus dolorum!
+      </div>
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui incidunt
+        dolore officia, a necessitatibus dolorum!
+      </div>
+    </div>
+  </body>
+</html>

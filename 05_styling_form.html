@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      input {
+        padding: 5px;
+        border: 1px solid #333;
+        margin: 8px 8px 8px 0px;
+      }
+
+      button {
+        padding: 8px 12px;
+        margin-top: 15px;
+        border: 1px solid #333;
+      }
+
+      div {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="username">Username:</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+        />
+        <br />
+      </div>
+
+      <div>
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" id="email" placeholder="Email" /><br />
+      </div>
+
+      <div>
+        <label for="password">Password:</label><br />
+        <input type="password" name="password" id="password" /><br />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
